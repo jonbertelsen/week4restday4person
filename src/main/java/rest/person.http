@@ -1,0 +1,22 @@
+###
+GET http://localhost:8080/week4restday4person/api/person/all
+Accept: application/json
+
+###
+POST http://localhost:8080/week4restday4person/api/person
+Content-Type: application/json
+
+{"fName":"Kurt","lName":"Wonnegut","phone":"12345678","id":0}
+
+###
+POST http://localhost:8080/week4restday4person/api/person
+Content-Type: application/json
+
+{"fName":"Peter","lName":"Hansen","phone":"12345678","id":1}
+
+###
+PUT http://localhost:8080/week4restday4person/api/person/2
+Content-Type: application/json
+
+{"fName":"Peter","lName":"Hansen","phone":"87654321",
+  "id":2,"street": "Ahlgade", "city": "Holbæk", "zip": "4300"}
